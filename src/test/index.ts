@@ -1,60 +1,52 @@
-import { scaleLinear } from 'd3-scale'
-import * as ani from '../index'
-async function initStage(stage: ani.Stage) {
-  stage.output = false
-  await stage.resource.loadImage('./pic/pattern.png', 'pattern')
-  await stage.resource.loadCSV('./data/test.csv', 'data')
-  // Object.keys(countries.getAlpha2Codes()).forEach((alpha2) => {
-  //   stage.resource.loadImage(`https://raw.githubusercontent.com/Jannchie/flagpack/master/flags/1x1/${alpha2.toLowerCase()}.svg`, alpha2);
-  // });
-  stage.options.sec = 60
-  const barChart = new ani.BarChart({
-    aniTime: [4, 60],
-    showXAxis: true,
-    margin: { top: 100, left: 10, right: 10, bottom: 10 },
-  })
+import * as ani from "../index";
 
-  // const map = new ani.MapChart({
-  //   aniTime: [4, 60],
-  //   visualRange: 'total',
-  //   showGraticule: true,
-  //   margin: { top: 100, left: 900, right: 10, bottom: 10 },
-  //   idField: 'iso_code',
-  //   dataName: 'filted_data',
-  //   valueField: 'total_vaccinations',
-  //   showLabel: true,
-  //   projectionType: 'orthographic',
-  //   mapIdField: 'alpha3Code',
-  //   pathShadowBlur: 100,
-  //   pathShadowColor: '#0284c7FF',
-  //   focusTopValueField: 'total_vaccinations',
-  //   useShadow: true,
-  //   focusTop: true,
-  //   visualMap: scaleLinear([1, 0.7, 0.3, 0], ['#0284c7FF', '#0284c744', '#0284c722', '#0284c700'])
-  //     .clamp(true),
-  // })
-  // stage.addChild(map)
-  stage.addChild(barChart)
-  void stage.resource.loadJSON(
-    'https://raw.githubusercontent.com/Jannchie/geoJson-map-data/main/world.json',
-    'map',
-  )
-  // stage.resource.setup().then(() => {
-  //   if (stage.resource.images.get("pattern")) {
-  //     const pattern = stage.canvas.getContext("2d")?.createPattern(stage.resource.images.get("pattern")!, "repeat") || undefined;
-  //     if (pattern) {
-  //       map.defaultFill = pattern!;
-  //     }
-  //   }
-  // });
-  return stage
+async function initStage(stage: ani.Stage) {
+  stage.output = false;
+  await stage.resource.loadImage("./pic/pattern.png", "pattern");
+  await stage.resource.loadCSV("./data/test.csv", "data");
+
+  await stage.resource.loadImage(
+    "https://picsum.photos/id/236/300/200",
+    "麦克"
+  );
+
+  await stage.resource.loadImage(
+    "https://picsum.photos/id/238/300/200",
+    "大卫"
+  );
+
+  stage.options.sec = 60;
+  const barChart = new ani.BarChart({
+    aniTime: [1, 60],
+    showXAxis: false,
+    margin: { top: 0, left: 10, right: 120, bottom: 0 },
+    itemCount: 10,
+    showLabel: false,
+    barFontSizeScale: 0.6,
+    dy: 18,
+    barInfoOptions: {},
+    dateLabelOptions: {
+      fontSize: 40,
+    },
+    // #2277cc #00ccee #ee88aa #ffbb00  #ff7722 #556699 #22cc88 #ddddaa #cc88cc #cc8866
+    // colorField: (id) => {
+    //   const colorDict = {
+    //     麦克: "#dc2626",
+    //     大卫: "#2277cc",
+    //     kate: "#ee88aa",
+    //   };
+
+    //   return colorDict[id] || "pink";
+    // },
+  });
+
+  stage.addChild(barChart);
+
+  return stage;
 }
-document.documentElement.style.background = '#223'
-const stage = new ani.Stage()
-void initStage(stage).then(d => d.play())
-void stage.renderController()
-if (typeof window !== 'undefined') {
-  // (window as any).stage = stage;
-  // (window as any).ani = ani;
-  // (window as any).map = map;
-}
+document.documentElement.style.background = "#fff"; // #223
+const stage = new ani.Stage();
+initStage(stage).then((s) => {
+  s.play();
+});
+stage.renderController();
