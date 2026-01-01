@@ -1,37 +1,37 @@
 class ColorPicker {
-  private colorIndex = 0
-  private readonly colorMap: Map<string, string> = new Map<string, string>()
+  private colorIndex = 0;
+  private readonly colorMap: Map<string, string> = new Map<string, string>();
   colorScheme: string[] = [
-    '#dc2626',
-    '#27C',
-    '#FB0',
-    '#2C8',
-    '#569',
-    '#0CE',
-    '#E8A',
-    '#DDA',
-    '#C86',
-    '#F72',
-    '#C8C',
-    '#BCA',
-    '#F27',
-  ]
+    "#dc2626",
+    "#27C",
+    "#FB0",
+    "#2C8",
+    "#569",
+    "#0CE",
+    "#E8A",
+    "#DDA",
+    "#C86",
+    "#F72",
+    "#C8C",
+    "#BCA",
+    "#F27",
+  ];
 
-  getColor (key: string): string {
-    let color = this.colorMap.get(key)
+  getColor(key: string): string {
+    let color = this.colorMap.get(key);
     if (!color) {
-      color = this.getNewColor()
-      this.colorMap.set(key, color)
+      color = this.getNewColor();
+      this.colorMap.set(key, color);
     }
-    return color
+    return color;
   }
 
-  getNewColor (): string {
-    return this.colorScheme[this.colorIndex++ % this.colorScheme.length]
+  getNewColor(): string {
+    return this.colorScheme[this.colorIndex++ % this.colorScheme.length];
   }
 
-  setColor (key: string, color: string) {
-    this.colorMap.set(key, color)
+  setColor(key: string, color: string) {
+    this.colorMap.set(key, color);
   }
 }
-export const colorPicker = new ColorPicker()
+export const colorPicker = new ColorPicker();

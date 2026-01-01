@@ -258,14 +258,15 @@ export class BarChart extends BaseChart {
           return a.value - b.value;
         }
       });
-    barGroup.children = options.map((o) => this.getBarComponent(o));
+
+    barGroup.children = options.map((option) => this.getBarComponent(option));
     if (this.showRankLabel) {
       this.appendRankLabels(barComponent);
     }
 
     if (this.showDateLabel) {
+      // 🚀 date
       const dateLabelText = this.getDateLabelText(sec);
-
       const dateLabelOptions = Object.assign(
         {
           font,
@@ -291,6 +292,24 @@ export class BarChart extends BaseChart {
       axises.xAxis.position.y -= 38;
       barComponent.children.push(axises.xAxis);
     }
+
+    if (sec > 1 && sec < 10) {
+      const img = new Image({
+        key: "info-1",
+        src: "bg_1",
+        position: {
+          x: 1000,
+          y: 720,
+        },
+        shape: {
+          width: 200,
+          height: 200,
+        },
+      });
+
+      barComponent.children.push(img);
+    }
+
     return barComponent;
   }
 
@@ -439,6 +458,7 @@ export class BarChart extends BaseChart {
       typeof this.imageField === "string"
         ? data[this.imageField]
         : this.imageField(data[this.idField], this.meta, this.dataGroupByID);
+
     return {
       id: data[this.idField],
       pos: {
@@ -504,6 +524,7 @@ export class BarChart extends BaseChart {
       radius: options.radius,
       clip: this.clipBar,
     });
+
     const label = new Text(
       this.getLabelTextOptions(
         this.labelFormat(options.id, this.meta, this.dataGroupByID),
@@ -525,6 +546,7 @@ export class BarChart extends BaseChart {
       font,
       fillStyle: options.color,
     });
+
     const imagePlaceholder =
       options.image && this.stage?.resource.images.get(options.image) != null
         ? options.shape.height
@@ -557,6 +579,8 @@ export class BarChart extends BaseChart {
       key: `bar-info-${barInfoOptions.text}`,
       ...barInfoOptions,
     });
+
+    // 🚀 在 stage.resource 里查找图片
     if (
       options.image &&
       this.stage?.resource.images.get(options.image) != null
@@ -591,6 +615,7 @@ export class BarChart extends BaseChart {
     // });
     // bar.children.push(rank);
     bar.children.push(barInfo);
+
     res.children.push(bar);
     res.children.push(valueLabel);
 
