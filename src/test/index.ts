@@ -1,5 +1,12 @@
 import * as ani from "../index";
-import { Image } from "../core/component/Image";
+
+document.documentElement.style.background = "#fff"; // #223
+const totalSec = 90;
+const stage = new ani.Stage(undefined, totalSec);
+initStage(stage).then((stage) => {
+  stage.play();
+  stage.renderController();
+});
 
 async function initStage(stage: ani.Stage) {
   stage.output = false;
@@ -21,15 +28,13 @@ async function initStage(stage: ani.Stage) {
     "bg_1"
   );
 
-  stage.options.sec = 60;
-
   // #2277cc #00ccee #ee88aa #ffbb00  #ff7722 #556699 #22cc88 #ddddaa #cc88cc #cc8866
   ani.colorPicker.setColor("麦克", "#dc2626");
   ani.colorPicker.setColor("大卫", "#2277cc");
   ani.colorPicker.setColor("kate", "#ee88aa");
 
   const barChart = new ani.BarChart({
-    aniTime: [1, 60],
+    aniTime: [1, totalSec],
     showXAxis: false,
     margin: { top: 0, left: 0, right: 20, bottom: 10 },
     itemCount: 11,
@@ -46,10 +51,3 @@ async function initStage(stage: ani.Stage) {
 
   return stage;
 }
-
-document.documentElement.style.background = "#fff"; // #223
-const stage = new ani.Stage();
-initStage(stage).then((s) => {
-  s.play();
-});
-stage.renderController();

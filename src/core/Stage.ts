@@ -53,7 +53,7 @@ export class Stage {
     return this.renderer.canvas;
   }
 
-  constructor(canvas?: HTMLCanvasElement) {
+  constructor(canvas?: HTMLCanvasElement, totalSec?: number) {
     this.renderer = new CanvasRenderer();
     this.renderer.stage = this;
     if (canvas == null) {
@@ -65,6 +65,10 @@ export class Stage {
     }
     this.renderer.setCanvas(canvas);
     this.sec = 0;
+    if (totalSec) {
+      this.options.sec = totalSec;
+    }
+
     this.ctl = new Controller(this);
   }
 
