@@ -117,7 +117,6 @@ out
 .vscode/**
 test/data/country-meta.csv
 *.mov
-*.csv
 *.mp4
 *.temp.*
 
