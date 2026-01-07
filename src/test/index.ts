@@ -1,7 +1,7 @@
 import * as ani from "../index";
 
 document.documentElement.style.background = "#fff"; // #223
-const totalSec = 120;
+const totalSec = 300;
 const stage = new ani.Stage(undefined, totalSec);
 initStage(stage).then((stage) => {
   stage.play();
