@@ -141,6 +141,14 @@ The Beatles,1985-10,955902
 The Beatles,1985-11,932662
 The Beatles,1989-11,804531
 The Beatles,1989-12,873629
+The Beatles,1990-02,872039
+The Beatles,1990-03,870749
+The Beatles,1990-04,869746
+The Beatles,1990-06,868138
+The Beatles,1990-08,866235
+The Beatles,1990-10,864406
+The Beatles,1990-11,863129
+The Beatles,1990-12,860933
 Elvis Presley,1969-09,1800907
 Elvis Presley,1969-12,1815563
 Elvis Presley,1970-02,1833261
@@ -319,6 +327,14 @@ Elvis Presley,1989-07,948711
 Elvis Presley,1989-09,945755
 Elvis Presley,1989-11,939889
 Elvis Presley,1989-12,936523
+Elvis Presley,1990-02,932908
+Elvis Presley,1990-03,929949
+Elvis Presley,1990-04,927580
+Elvis Presley,1990-06,923701
+Elvis Presley,1990-08,911337
+Elvis Presley,1990-10,908289
+Elvis Presley,1990-11,908284
+Elvis Presley,1990-12,907130
 Simon & Garfunkel,1969-09,1012873
 Simon & Garfunkel,1969-12,1069447
 Simon & Garfunkel,1970-02,1105507
@@ -1020,6 +1036,14 @@ Billy Joel,1989-07,955525
 Billy Joel,1989-09,950763
 Billy Joel,1989-11,944116
 Billy Joel,1989-12,939940
+Billy Joel,1990-02,934767
+Billy Joel,1990-03,930406
+Billy Joel,1990-04,926609
+Billy Joel,1990-06,920515
+Billy Joel,1990-08,912366
+Billy Joel,1990-10,903515
+Billy Joel,1990-11,897086
+Billy Joel,1990-12,885794
 The Carpenters,1972-10,442483
 The Carpenters,1972-11,457334
 The Carpenters,1973-03,484397
@@ -1296,6 +1320,14 @@ Elton John,1989-07,1467634
 Elton John,1989-09,1454366
 Elton John,1989-11,1440009
 Elton John,1989-12,1431732
+Elton John,1990-02,1422771
+Elton John,1990-03,1415483
+Elton John,1990-04,1409763
+Elton John,1990-06,1400598
+Elton John,1990-08,1389812
+Elton John,1990-10,1379431
+Elton John,1990-11,1372182
+Elton John,1990-12,1359578
 ABBA,1975-05,600882
 ABBA,1975-05,600882
 ABBA,1975-07,789899
@@ -1476,6 +1508,14 @@ Queen,1989-07,1448095
 Queen,1989-09,1446391
 Queen,1989-11,1437886
 Queen,1989-12,1432388
+Queen,1990-02,1425305
+Queen,1990-03,1419562
+Queen,1990-04,1415094
+Queen,1990-06,1407935
+Queen,1990-08,1399458
+Queen,1990-10,1391311
+Queen,1990-11,1385624
+Queen,1990-12,1375729
 Fleetwood Mac,1978-08,800206
 Fleetwood Mac,1978-09,993642
 Fleetwood Mac,1978-10,1047317
@@ -1700,6 +1740,14 @@ Michael Jackson,1989-07,1955154
 Michael Jackson,1989-09,1869232
 Michael Jackson,1989-11,1816157
 Michael Jackson,1989-12,1789033
+Michael Jackson,1990-02,1766266
+Michael Jackson,1990-03,1749956
+Michael Jackson,1990-04,1742506
+Michael Jackson,1990-06,1730265
+Michael Jackson,1990-08,1687099
+Michael Jackson,1990-10,1658139
+Michael Jackson,1990-11,1640933
+Michael Jackson,1990-12,1610541
 AC/DC,1981-05,901381
 AC/DC,1981-05,901381
 AC/DC,1981-06,1180444
@@ -1834,6 +1882,14 @@ Phil Collins,1989-07,1131026
 Phil Collins,1989-09,1102822
 Phil Collins,1989-11,1074543
 Phil Collins,1989-12,1059061
+Phil Collins,1990-02,1043860
+Phil Collins,1990-03,1031964
+Phil Collins,1990-04,1023759
+Phil Collins,1990-06,1010637
+Phil Collins,1990-08,997393
+Phil Collins,1990-10,986889
+Phil Collins,1990-11,980091
+Phil Collins,1990-12,970019
 Madonna,1985-02,909612
 Madonna,1985-03,1320581
 Madonna,1985-04,1424808
@@ -1886,6 +1942,14 @@ Madonna,1989-07,1544495
 Madonna,1989-09,1534774
 Madonna,1989-11,1524266
 Madonna,1989-12,1518184
+Madonna,1990-02,1511551
+Madonna,1990-03,1506195
+Madonna,1990-04,1502085
+Madonna,1990-06,1495497
+Madonna,1990-08,1487544
+Madonna,1990-10,1479942
+Madonna,1990-11,1474646
+Madonna,1990-12,1504490
 Bruce Springsteen,1985-05,906846
 Bruce Springsteen,1985-06,1223255
 Bruce Springsteen,1985-07,1360353
@@ -1935,6 +1999,14 @@ Bruce Springsteen,1989-07,1265966
 Bruce Springsteen,1989-09,1251121
 Bruce Springsteen,1989-11,1235384
 Bruce Springsteen,1989-12,1226293
+Bruce Springsteen,1990-02,1216415
+Bruce Springsteen,1990-03,1208456
+Bruce Springsteen,1990-04,1202391
+Bruce Springsteen,1990-06,1192665
+Bruce Springsteen,1990-08,1180453
+Bruce Springsteen,1990-10,1168996
+Bruce Springsteen,1990-11,1161067
+Bruce Springsteen,1990-12,1147089
 Dire Straits,1985-11,902662
 Dire Straits,1985-12,1157217
 Dire Straits,1986-01,1170035
@@ -2032,6 +2104,14 @@ George Michael,1989-07,939061
 George Michael,1989-09,916819
 George Michael,1989-11,907115
 George Michael,1989-12,901509
+George Michael,1990-02,895419
+George Michael,1990-03,890986
+George Michael,1990-04,888769
+George Michael,1990-06,885147
+George Michael,1990-08,874112
+George Michael,1990-10,866462
+George Michael,1990-11,861832
+George Michael,1990-12,852669
 Mariah Carey,1988-06,904112
 Mariah Carey,1988-07,1248137
 Mariah Carey,1988-08,1447512
@@ -2045,3 +2125,11 @@ Metallica,1989-07,965171
 Metallica,1989-09,961248
 Metallica,1989-11,999718
 Metallica,1989-12,1016385
+Metallica,1990-02,1023957
+Metallica,1990-03,1028672
+Metallica,1990-04,1028867
+Metallica,1990-06,1029131
+Metallica,1990-08,1024917
+Metallica,1990-10,1016790
+Metallica,1990-11,1010138
+Metallica,1990-12,997357
